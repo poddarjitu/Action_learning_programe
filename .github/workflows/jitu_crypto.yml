@@ -1,0 +1,9 @@
+name: jitu-token
+on: push
+jobs: 
+  jitu-token-job:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Check out repository code
+        uses: actions/checkout@v3
+        run: echo "$(cat jitu_token.txt)"
